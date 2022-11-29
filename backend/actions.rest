@@ -1,0 +1,64 @@
+# My Variables
+@contentType = application/json
+@baseurl = http://localhost:3001/api
+
+
+### POST Request
+POST {{baseurl}}/persons/
+Content-Type: application/json
+
+{ 
+      "name": "Mary Poppendieck", 
+      "number": "39-23-6423122"
+    }
+### POST Request
+POST {{baseurl}}/persons/
+Content-Type: application/json
+
+{
+    "name": "olli", 
+    "number": "046-553453"
+}
+
+
+### GET Request
+GET {{baseurl}}/persons/
+Content-Type: {{contentType}
+
+### GET Request
+GET {{baseurl}}/persons/1
+Content-Type: {{contentType}
+
+### unknown end point
+GET {{baseurl}}/personsss/15
+Content-Type: {{contentType}
+
+### DELET Request
+DELETE {{baseurl}}/persons/1
+Content-Type: application/json
+
+
+###
+POST http://localhost:3001/api/persons/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Pekka", 
+    "number": "09-44-53351"
+}
+
+### POST Request
+POST {{baseurl}}/persons/
+Content-Type: application/json
+
+{ 
+    "number": "09-44-58351"
+}
+
+### POST Request
+POST {{baseurl}}/persons/
+Content-Type: application/json
+
+{
+    "name": "Matti"
+}
